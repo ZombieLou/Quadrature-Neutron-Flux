@@ -1,7 +1,7 @@
 !----------------------------------------------------------------------
 !Module: types
 !---------------------------------------------------------------------
-!! Rodrigo Navarro Perez
+!! Rodrigo Louis Andre
 !!
 !! Defines the integer parameters sp, dp and qp to
 !! be used as kinds to define real variables as single precision 

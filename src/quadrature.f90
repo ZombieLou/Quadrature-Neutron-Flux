@@ -50,7 +50,7 @@ interface
         use types, only : dp
         implicit none
         real(dp), intent(in) :: x(:), data(:)
-        ! Functions allows us to send arbitrary functions into this module for integration
+       
     end function func
 end interface
 

@@ -139,9 +139,7 @@ real(dp) function box_flux_booles(depth, width, height, x_zero, y_zero, n_grid) 
             else 
                 exit
             endif
-                ! Now you can fill the h_xyz array with an evaluation of the function
-                ! to integrate. To make things cleaner will define a function 
-                ! below that returns the value we want
+                ! Now fill the h_xyz array with an evaluation 
 
                 !flux_kernel contains integrand of the triple integral.  
                 !array filled to be send to booles quadrature for integral approximation
@@ -313,7 +311,7 @@ real(dp) function flux_kernel_vector(x_vector, data) result(k)
     x0 = data(1)
     y0 = data(2)
 
-    ! We're going to use the function we already defined for the 
+    ! Use the function we already defined for the 
     ! Boole's integration.
     k = flux_kernel(x, y, z, x0, y0)
 end function flux_kernel_vector
